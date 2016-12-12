@@ -1,10 +1,12 @@
+---
+declared-services:
+  tradeoff-analytics-service-standard:
+    label: tradeoff_analytics
+    plan: standard
 applications:
-- path: .
+- services:
+  - tradeoff-analytics-service-standard
+  name: tradeoff-analytics-demo
+  command: npm start
+  path: .
   memory: 256M
-  instances: 1
-  domain: mybluemix.net
-  name: esempioEma
-  host: esempioEma
-  disk_quota: 1024M
-  services:
-  - Tradeoff Analytics-nz
