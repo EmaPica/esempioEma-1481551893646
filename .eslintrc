@@ -1,13 +1,10 @@
 {
-  "rules": {
-    "no-console": 0
+  "env": {
+    "jquery": true,
+    "browser": true
   },
   "globals": {
-    describe: true,
-    it: true
+    "_": false
   },
-  "env": {
-    "node": true
-  },
-  "extends": "eslint:recommended",
+  "extends": "../../.eslintrc",
 }
